@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me encanta mi novia | 2026</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="img/foto.jpeg">
+</head>
+
+<body>
+    <canvas id="heartCanvas"></canvas>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="bar"></div>
+    </div>
+
+    <div class="slider">
+
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <div class="glass-card">
+                <span class="emoji">💕</span>
+                <h1 class="neon-text">HOLA MI AMOR!!!</h1>
+                <p>Hay momentos que cambian tu vida… y tú eres el mío.</p>
+                <button onclick="next()">Comenzar ❤️</button>
+            </div>
+        </div>
+
+        <!-- Cuando me empezó a gustar -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">✨</span>
+                <h2>Cuando Empezaste a Gustarme</h2>
+                <p>No fue de golpe… fue poco a poco. Entre risas, conversaciones y miradas. Un día simplemente entendí
+                    que ya no eras solo alguien especial… eras la persona que me hacía sonreír sin razón.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Primera cita -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">🌹</span>
+                <h2>13/06/2025 - Nuestra Primera Cita</h2>
+                <p>El día que reuní el valor para invitarte a salir. Estaba nervioso… pero valió cada segundo.
+                    Ese día confirmó que quería seguir creando recuerdos contigo.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Declaración -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">❤️</span>
+                <h2>28/06/2025 - Nos Declaramos Nuestro Amor</h2>
+                <p>Ese día nuestras palabras dejaron de ser sentimientos guardados… y se convirtieron en un
+                    “te amo” sincero. Fue el momento en que nuestros corazones hablaron al mismo tiempo.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Primer beso -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">💋</span>
+                <h2>25/07/2025 - Nuestro Primer Beso</h2>
+                <p>Un instante que duró segundos… pero que guardaré para siempre.
+                    Fue la confirmación de que lo nuestro era real.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Noviazgo -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">💍</span>
+                <h2>05/10/2025 - ¿Me concederías el privilegio de ser tu novio?</h2>
+                <p>Ese día no solo hice una pregunta… tomé la mejor decisión de mi vida.
+                    Desde entonces, cada día contigo es un regalo.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Discord -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">🎧</span>
+                <h2>Nuestras Horas en Discord</h2>
+                <p>Las llamadas eternas, los desvelos hablando de todo y de nada,
+                    las risas inesperadas… Incluso a través de una pantalla
+                    me hacías sentir más cerca de ti.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Salidas -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">🌆</span>
+                <h2>Nuestras Salidas</h2>
+                <p>Cada paseo, cada cita, cada momento compartido…
+                    contigo todo se siente más bonito, más vivo y más real.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Cómo me hace sentir -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">💖</span>
+                <h2>Cómo Me Haces Sentir</h2>
+                <p>Contigo me siento completo. En paz. Amado.
+                    Llenas espacios que ni siquiera sabía que estaban vacíos.</p>
+                <button onclick="next()">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Declaración final -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">🔥</span>
+                <h2>Lo Que Siento Por Ti</h2>
+                <p>Te amo. Amo tu risa, tu voz, tu mirada…
+                    Amo cómo me haces sentir cuando estoy contigo.
+                    Amo todo de ti.</p>
+                <button onclick="next()">Una Última Pregunta...</button>
+            </div>
+        </div>
+
+        <!-- San Valentín -->
+        <div class="slide">
+            <div class="glass-card">
+                <span class="emoji">🌹</span>
+                <h2>Mi Pregunta Especial</h2>
+                <p class="big-text">¿Quieres ser mi San Valentín… hoy y siempre?</p>
+                <div class="btn-group">
+                    <button class="neon-btn" onclick="next()">¡Sí, para siempre! ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Final con FOTO -->
+        <div class="slide">
+            <div class="glass-card">
+                <h2>Nuestra Historia Continúa…</h2>
+
+                <img src="img/foto.jpeg" alt="Nuestra foto" class="love-photo">
+
+                <p>
+                    Esta es solo una pequeña parte de todo lo que hemos vivido.
+                    Y quiero seguir creando recuerdos contigo,
+                    seguir riendo contigo,
+                    seguir amándote cada día más.
+                </p>
+
+                <p class="neon-text small">Te amo Dylana ❤️</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
